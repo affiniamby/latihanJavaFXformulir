@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="563.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cobaproyek1.FXMLLatihanController">
+   <children>
+      <Label layoutX="254.0" layoutY="53.0" text="Formulir">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="154.0" layoutY="107.0" prefHeight="112.0" prefWidth="239.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="89.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="150.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="63.0" style="-fx-background-color: red;" text="Nama">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+            <Label prefHeight="17.0" prefWidth="67.0" style="-fx-background-color: red;" text="Alamat" GridPane.rowIndex="1" />
+            <Label style="-fx-background-color: red;" text="Absen" GridPane.rowIndex="2" />
+            <Label style="-fx-background-color: red;" text="Telepon" GridPane.rowIndex="3" />
+            <TextField fx:id="Nama" onAction="#namaa" GridPane.columnIndex="1" />
+            <TextField fx:id="Alamat" onAction="#alamatt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Absen" onAction="#absenn" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="Telepon" onAction="#teleponn" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <JFXButton fx:id="Proses" layoutX="203.0" layoutY="232.0" onAction="#prosess" style="-fx-background-color: blue;" text="Proses" />
+      <JFXTextArea fx:id="Hasil" layoutX="138.0" layoutY="257.0" maxWidth="309.0" minWidth="309.0" prefHeight="122.0" prefWidth="309.0" />
+      <JFXButton fx:id="Hapus" layoutX="293.0" layoutY="232.0" onAction="#hapus" style="-fx-background-color: blue;" text="Hapus" />
+   </children>
+</AnchorPane>
